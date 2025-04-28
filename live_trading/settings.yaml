@@ -1,0 +1,32 @@
+# settings.yaml
+
+ibkr_connection:
+  host: "127.0.0.1"
+  port: 7497
+  client_id: 10
+
+contract_settings:
+  symbol: "XAUUSD"
+  secType: "CMDTY"
+  exchange: "SMART"
+  currency: "USD"
+
+historical_data:
+  duration: "20 D"
+  bar_size: "4 hours"
+
+risk_management:
+  drawdown_alert_threshold: 0.05
+  risk_per_trade: 0.01
+
+fedwatch_settings:
+  sentiment: "STAY"
+  probability: 93.1
+  fed_date: "2025-05-07"
+
+streamlit_settings:
+  refresh_seconds: 14460
+  log_file_path: "live_trading/xauusd_live_log.csv"
+
+polling:
+  interval_seconds: 14460  # 4 hours (1 minute delay for any potential issues)
